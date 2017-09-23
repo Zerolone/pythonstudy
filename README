@@ -10,8 +10,18 @@ asdf
 
 http://www.cnblogs.com/wangpenghui522/p/5553568.html
 
-
+git clone 用于建立本地仓库 
 git clone https://github.com/Zerolone/pythonstudy.git
+
+
+git fetch 从远程获取最新版本到本地，不会自动merge，比git pull更安全些。 
+
+
+git pull 
+从服务器的仓库中获取代码，和本地代码合并。等同于： Git fetch + Git merge
+
+
+
 
 git config --global user.name zerolone
 git config --global user.email zerolone@163.com
