@@ -1,13 +1,5 @@
 #!/usr/bin/python
 
-asdf new edit
-
-
-print "sadf";
-
-print 'asdf'
-
-
 for i in range(1,10):
   #print i;
 
@@ -15,6 +7,9 @@ for i in range(1,10):
     #print j;
 
     for k in range(1,10):
-      print i,j, k;
+      if(i == j or j==k or i==k):
+        '1'
+      else:
+        print i,j, k;
 
 
