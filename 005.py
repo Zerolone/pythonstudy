@@ -1,7 +1,10 @@
 #!/usr/bin/python
-# coding=utf-8
+# coding: UTF-8
 
-# 循环显示数字
+'''
+循环显示数字
+
+'''
 
 for i in range(1,10):
   #print i;
