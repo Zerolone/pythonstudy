@@ -7,3 +7,14 @@ asdf
 
 asdf
 
+
+http://www.cnblogs.com/wangpenghui522/p/5553568.html
+
+
+git clone https://github.com/Zerolone/pythonstudy.git
+
+git config --global user.name zerolone
+git config --global user.email zerolone@163.com
+
+git commit -a -m 'asdf'
+git push
