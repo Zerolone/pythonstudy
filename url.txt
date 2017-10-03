@@ -11,8 +11,9 @@ http://www.runoob.com/python/python-100-examples.html
 基础教程
 http://www.runoob.com/python/python-tutorial.html
 
+另外一个基础教程
+http://www.pythondoc.com/pythontutorial27/introduction.html
 
-2个效果都很不错
-https://www.hackerrank.com/challenges/write-a-function?h_r=next-challenge&h_v=zen
-https://www.codecademy.com/en/courses/learn-python/lessons/tip-calculator/exercises/the-meal?action=resume
 
+studying.
+http://www.runoob.com/python/python-files-io.html

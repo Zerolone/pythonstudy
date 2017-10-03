@@ -1,3 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python 
 
-print '002';
+
+import support;
+
+support.print_func('sdfsa')
