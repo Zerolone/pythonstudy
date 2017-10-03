@@ -2,18 +2,27 @@
 # coding: UTF-8
 
 '''
-循环显示数字
-
+regex
 '''
 
-for i in range(1,10):
-  #print i;
+import re
+a = re.match('www', 'www.zerolone.com').span();
+print a;
 
-  for j in range(1,10):
-    #print j;
+'''
+a = re.match('com', 'www.zerolone.com').span();
+#print a;
+'''
 
-    for k in range(1,10):
-      if(i == j or j==k or i==k):
-        '1'
-      else:
-        print i,j, k;
+line = "Cats are smarter than dogs"
+matchObj = re.match ( r'(.*) are (.*?) .*', line, re.M|re.I)
+matchObj = re.search( r'(.*) are (.*?) .*', line, re.M|re.I)
+
+#print matchObj;
+
+if matchObj:
+  print matchObj.group();
+  print matchObj.group(1);
+  print matchObj.group(2);
+
+
