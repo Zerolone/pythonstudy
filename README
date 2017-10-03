@@ -1,9 +1,3 @@
-001 only print  仅有print
-002 import support module
-003 try except
-004 class
-005 regex
-
 http://www.cnblogs.com/wangpenghui522/p/5553568.html
 
 git clone 用于建立本地仓库 
@@ -36,3 +30,14 @@ git add -A/*          #添加当前目录下的所有文件
 git add .             #添加当前目录下的所有文件和子目录
 
 git rm --cache a.c    #删除已提交到本地仓库的文件
+
+
+001 only print  仅有print
+002 import support module
+003 try except
+004 class
+005 regex
+006 mysql  pip install mysql-python
+007 008 thread 多线程
+009 gui
+010 json
