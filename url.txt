@@ -14,6 +14,12 @@ http://www.runoob.com/python/python-tutorial.html
 另外一个基础教程
 http://www.pythondoc.com/pythontutorial27/introduction.html
 
+<<<<<<< HEAD
+=======
+2个效果都很不错
+https://www.hackerrank.com/challenges/write-a-function?h_r=next-challenge&h_v=zen
+https://www.codecademy.com/learn
+>>>>>>> 109a2840d1584a71d50e0b01e73ab0b0fad1390f
 
 studying.
 http://www.runoob.com/python/python-files-io.html
