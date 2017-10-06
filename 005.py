@@ -53,11 +53,18 @@ else:
 
 
 line = '''
-Cats are smarter1 than dogs
-Cats are smarter2 than dogs
-Cats are smarter3 than dogs
+Cats are smarter1 than dogsA
+Cats are smarter2 than dogsB
+Cats are smarter3 than dogsrC
 '''
 matchObj = re.findall( r'are (.*?) than (.*)', line, re.M|re.I)
+
+print '----' * 10;
+for i in matchObj:
+  print '====' * 10;
+  print i[0]
+
+print '----' * 10;
 
 print matchObj;
 
