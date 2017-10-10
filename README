@@ -42,3 +42,10 @@ git rm --cache a.c    #删除已提交到本地仓库的文件
 009 gui
 010 json
 011 class extend
+
+sss scrapy
+
+http://blog.csdn.net/djd1234567/article/details/45913967
+scrapy genspider -l
+scrapy genspider -d basic
+

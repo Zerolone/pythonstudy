@@ -15,3 +15,7 @@ class SssItem(scrapy.Item):
     title  = scrapy.Field();
     url    = scrapy.Field();
     uptime = scrapy.Field();
+    content  = scrapy.Field();
+    author   = scrapy.Field();
+
+

@@ -1,15 +1,36 @@
 # -*- coding: utf-8 -*-
+'''
+scrapy crawl example
+
+输出json格式
+scrapy crawl example -o sss_re.json -t json
+
+
+'''
+
+
 import scrapy
 
 import re
 
-from sss.items import SssItem
+#from sss.items import SssItem
 
 class ExampleSpider(scrapy.Spider):
     name = 'example'
     allowed_domains = ['news.fjsen.com']
     #start_urls = ['http://news.fjsen.com/e_news.htm', 'http://news.fjsen.com/W_Comments.htm']
     start_urls = ['http://news.fjsen.com/e_news.htm']
+
+
+    for i in range(2, 11):
+        start_urls.append('http://news.fjsen.com/e_news_' + str(i) + '.htm')
+
+    #print  start_urls;
+    #exit();
+
+
+
+
 
     def parse(self, response):
         filename  = response.url.split('/')[-2];
