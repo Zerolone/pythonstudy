@@ -45,6 +45,8 @@ git rm --cache a.c    #删除已提交到本地仓库的文件
 
 sss scrapy
 
+.相对php的curl采集， 可能提升了1000倍的速度 -_-||
+
 http://blog.csdn.net/djd1234567/article/details/45913967
 scrapy genspider -l
 scrapy genspider -d basic
