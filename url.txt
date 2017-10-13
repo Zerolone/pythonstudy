@@ -4,3 +4,9 @@ https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a
 
 
 http://www.elias.cn/Python/HomePage
+
+
+
+vncserver -depth 16 -name aru_desktop -geometry 800x600 :1
+vncserver -depth 16 -name aru_desktop -geometry 800x600 :5901
+
