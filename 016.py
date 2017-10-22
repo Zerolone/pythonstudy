@@ -21,10 +21,20 @@ http://www.linuxidc.com/Linux/2014-09/107002.htm
 """
 1、实现原理：通过SNMP协议获取系统信息，再进行相应的计算和格式化，最后输出结果
 2、特别注意：被监控的机器上需要支持snmp。yum install -y net-snmp*安装
+
+
+snmpwalk -v 1 -c public 192.168.99.101 IF-MIB::ifInOctets.1
+snmpwalk -v 1 -c public 192.168.99.101 IF-MIB::ifOutOctets.1
+
+snmpwalk -v 2c -c public 192.168.99.101 .1.3.6.1.2.1.2.2.1.10.2 receive
+
+
+
 """
 # !/usr/bin/python
 import re
 import os
+import time
 
 
 # get SNMP-MIB2 of the devices
@@ -54,16 +64,24 @@ def getDate(host, oid):
 
 
 if __name__ == '__main__':
-  hosts = ['192.168.10.1', '192.168.10.2']
+  #hosts = ['192.168.10.1', '192.168.10.2']
+  hosts = ['192.168.99.101', 'localhost']
   for host in hosts:
-    device_list = getDevices(host)
 
-    inside = getDate(host, 'IF-MIB::ifInOctets')
-    outside = getDate(host, 'IF-MIB::ifOutOctets')
+    for i in range(2):
+      device_list = getDevices(host)
 
+      inside = getDate(host, 'IF-MIB::ifInOctets')
+      outside = getDate(host, 'IF-MIB::ifOutOctets')
+
+      print inside, outside;
+
+      #time.sleep(1);
+
+    '''
     print '==========' + host + '=========='
     for i in range(len(inside)):
       print '%s : RX: %-15s  TX: %s ' % (device_list[i], inside[i], outside[i])
     print
-
+    '''
 
