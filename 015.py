@@ -27,8 +27,58 @@ def get_network_flow(os):
     return "%.2f" % present_network_flow
 
 
+
 if __name__ == "__main__":
+  c = wmi.WMI()
+  '''
+  y = c.Win32_Process()
+  for line in y:
+    print (line)
+  
+
+  a = c.Win32_PerfFormattedData_Tcpip_NetworkInterface();
+  print a;
+  '''
+
+  tmplist = []
+  aaa = 0;
+  intfid1 = 0
+  for interface in c.Win32_NetworkAdapterConfiguration (IPEnabled=1):
+    tmpdict = {}
+    tmpdict["Description"] = interface.Description
+    tmpdict["IPAddress"] = interface.IPAddress[0]
+    tmpdict["IPSubnet"] = interface.IPSubnet[0]
+    tmpdict["MAC"] = interface.MACAddress
+    tmpdict["MTU"] = interface.MTU
+    intfid2 = 0
+    for interfacePerf in c.Win32_PerfFormattedData_Tcpip_NetworkInterface():
+      if intfid1 == intfid2:
+        dir(interfacePerf)
+        tmpdict["BytesRSec"] = interfacePerf.BytesReceivedPerSec
+        #tmpdict["BytesSSec"] = interfacePerf.BytesSentPerSec
+        #tmpdict["BytesRPkg"] = interfacePerf.PacketsReceivedPersec
+        #tmpdict["BytesSPkg"] = interfacePerf.PacketsSentPersec
+
+
+
+        intfid2 += 1
+        tmplist.append(tmpdict)
+        intfid1 += 1
+
+  print tmplist;
+  print aaa;
+
+
+  '''
+  c = wmi.WMI()
+  print c.Win32_PerfRawData_Tcpip_TCPv4();
+  '''
+
+  '''
   os = platform.system()
   while 1:
     flow = get_network_flow(os)
     print "{0}KB".format(flow)
+  '''
+
+

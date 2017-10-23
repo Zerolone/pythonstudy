@@ -14,7 +14,10 @@ import time
 
 
 aaaa =  psutil.net_io_counters()
+print aaa;
 
+
+'''
 
 bbbb = aaaa.bytes_recv;
 #bbbb = aaaa.bytes_sent;
@@ -32,3 +35,6 @@ for i in range(30):
   dddd/=1024;
   print dddd;
   #print dddd;
+
+
+'''
