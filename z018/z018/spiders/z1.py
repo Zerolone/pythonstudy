@@ -106,7 +106,7 @@ class Z1Spider(scrapy.Spider):
 
     #sys.exit(0);
 
-    #print '----------------------------';
+    print '----------------------------';
     print(start_urls);
     print '----------------------------';
 
