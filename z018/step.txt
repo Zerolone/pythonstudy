@@ -1,0 +1,10 @@
+scrapy startproject z018
+
+cd z018
+
+scrapy genspider z1 z.com
+
+scrapy crawl z1
+
+
+

@@ -43,9 +43,14 @@ git rm --cache a.c    #删除已提交到本地仓库的文件
 010 json
 011 class extend
 
+013 编码转换
 014 监控网络 -  psutil
 015 其他方法监控网络 - 失败
 016 snmp
+017 获取操作系统信息
+018 connect mysql
+
+
 
 sss scrapy
 

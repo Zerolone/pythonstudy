@@ -2,3 +2,11 @@ scrapy
 
 apt-get install libssl-dev
 
+
+
+使用whl
+pip install wheel
+pip install f:\MySQL_python-1.2.5-cp27-none-win_amd64.whl
+
+
+
