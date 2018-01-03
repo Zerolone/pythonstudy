@@ -101,6 +101,8 @@ class Z1Spider(scrapy.Spider):
     #print a;
 
     urlFix = 'http://www.j.com/scrapy/';
+    urlFix = 'http://192.168.99.101/scrapy/';
+
     for i in range(0,10):
         start_urls.append(urlFix + str(i) + '.html');
 
