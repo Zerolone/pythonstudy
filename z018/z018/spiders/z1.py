@@ -8,6 +8,7 @@ from scrapy.http import Request
 
 urlFix = 'http://www.j.com/scrapy/';
 urlFix = 'http://192.168.99.101/scrapy/';
+urlFix = 'http://www.zerolone.com/scrapy/';
 
 # 获取数据
 def getData(paramsArr=''):
