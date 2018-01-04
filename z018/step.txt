@@ -8,14 +8,26 @@ scrapy crawl z1
 scrapy crawl z1 -o sss_z1.json -t json
 
 --nolog不显示日志
-scrapy crawl z1 --nolog
+scrapy crawl z1 --nolog -a ddid=1
 
 
 
 pip install scrapyd
 
+创建egg
+https://www.cnblogs.com/kungfupanda/p/3343113.html
 
+到z018目录， 运行 python setup.py bdist_egg 就可以了。
+当然， 可以相应修改setup.py 文件
+
+curl http://localhost:6800/addversion.json -F project=z018 -F version=r001 -F egg=@project-1.0-py2.7.egg
+
+
+
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d a=1
 curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d a=2
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d a=3
+
 
 
 scrapyd-deploy scrapyd_z018 -p z018
