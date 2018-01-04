@@ -1,3 +1,5 @@
+git clone https://github.com/Zerolone/pythonstudy.git
+
 scrapy startproject z018
 
 cd z018
@@ -17,17 +19,32 @@ pip install scrapyd
 创建egg
 https://www.cnblogs.com/kungfupanda/p/3343113.html
 
-到z018目录， 运行 python setup.py bdist_egg 就可以了。
+到z018目录， 运行
+cd ~/Desktop/pythonstudy
+cd z018
+python setup.py bdist_egg
+cd dist
+就可以了。
 当然， 可以相应修改setup.py 文件
 
 curl http://localhost:6800/addversion.json -F project=z018 -F version=r001 -F egg=@project-1.0-py2.7.egg
 
 
 
-curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d a=1
-curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d a=2
-curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d a=3
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=1
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=2
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=3
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=4
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=5
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=6
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=7
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=8
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=9
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=10
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d ddid=11
 
+#终止爬虫
+curl http://192.168.2.239:6800/cancel.json -d project=Crawler -d job= 8270364f9d9811e5adbf000c29a5d5be
 
 
 scrapyd-deploy scrapyd_z018 -p z018

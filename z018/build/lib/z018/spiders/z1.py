@@ -10,13 +10,13 @@ from scrapy.http import Request
 
 urlFix = 'http://www.j.com/scrapy/';
 urlFix = 'http://192.168.99.101/scrapy/';
-#urlFix = 'http://www.zerolone.com/scrapy/';
+urlFix = 'http://www.zerolone.com/scrapy/';
 
 class Z1Spider(scrapy.Spider):
     name = 'z1'
     ddid = 0;
 
-    allowed_domains = ['jx.com','192.168.99.101']
+    allowed_domains = ['jx.com','192.168.99.101', 'zerolone.com']
     start_urls = []
 
     def __init__(self, ddid=0, *args, **kwargs):
