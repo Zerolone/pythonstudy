@@ -4,6 +4,10 @@ import json
 import re
 import sys;
 
+from scrapy.http import Request
+
+urlFix = 'http://www.j.com/scrapy/';
+urlFix = 'http://192.168.99.101/scrapy/';
 
 # 获取数据
 def getData(paramsArr=''):
@@ -100,10 +104,9 @@ class Z1Spider(scrapy.Spider):
     #a = getData(config);
     #print a;
 
-    urlFix = 'http://www.j.com/scrapy/';
-    urlFix = 'http://192.168.99.101/scrapy/';
 
-    for i in range(0,30):
+
+    for i in range(0,1):
         start_urls.append(urlFix + str(i) + '.html');
 
     #sys.exit(0);
@@ -112,11 +115,26 @@ class Z1Spider(scrapy.Spider):
     print(start_urls);
     print '----------------------------';
 
+
+
+
     def parse(self, response):
+        print response.url;
+
+        url = 'http://192.168.99.101/scrapy/0_0.html'
+        url = 'http://www.zerolone.com/'
+        yield scrapy.Request(url, callback=self.parse2)
+        print 'asdf----';
+
+    def parse2(self, reponse):
+        print 'asdf'
+
+    def parseX(self, response):
         filename = response.url;
         print filename;
         print '-----' * 10;
 
+        '''
         items=[];
         myItems = re.findall('{title([\s\S]+?)}[\s\S]+?{body([\s\S]+?)}', response.body, re.I | re.M);
         for i in myItems:
@@ -127,6 +145,61 @@ class Z1Spider(scrapy.Spider):
 
         print items;
         #exit();
+        '''
+        #print response.body;
 
-        return items;
+        items=[];
+        myItems = re.findall('<a href="(.+?)">(.+?)</a>', response.body, re.I | re.M);
 
+        for i in myItems:
+            url = urlFix + i[0];
+            #print url;
+
+            #yield Request(url, callback=self.parse_url)
+
+            yield self.parse_url(url);
+
+            '''
+            item = [];
+            content = self.parse_url(url)
+            item['content'] = content
+            yield item
+            '''
+
+            '''
+            items.append({
+              'url'   : i[0],
+              'title' : i[1],
+            });
+          '''
+          #print items;
+
+        #return items;
+
+    def parse_url(self,url):
+        print url;
+
+        content = Request('http://192.168.99.101/scrapy/0_11.html');
+
+        print content;
+        print content.body;
+
+
+
+
+        print '===========' * 10;
+
+
+        ''''
+        print '=================================='
+        items=[];
+        myItems = re.findall('{title([\s\S]+?)}[\s\S]+?{body([\s\S]+?)}', response.body, re.I | re.M);
+        for i in myItems:
+          items.append({
+            'title'   : i[0].strip(),
+            'content' : i[1],
+          });
+
+        print items;
+        #exit();
+        '''

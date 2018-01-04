@@ -13,4 +13,5 @@ class Z018Item(scrapy.Item):
     # name = scrapy.Field()
     title   = scrapy.Field();
     content = scrapy.Field();
+    url     = scrapy.Field();
     pass
