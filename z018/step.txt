@@ -51,3 +51,4 @@ scrapyd-deploy scrapyd_z018 -p z018
 
 
 
+http://scrapyd.readthedocs.io/en/latest/config.html
