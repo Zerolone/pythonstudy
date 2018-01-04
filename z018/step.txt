@@ -5,6 +5,9 @@ cd z018
 scrapy genspider z1 z.com
 
 scrapy crawl z1
+scrapy crawl z1 -o sss_z1.json -t json
+
+
 
 
 
