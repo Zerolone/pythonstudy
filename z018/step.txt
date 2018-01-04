@@ -12,5 +12,13 @@ scrapy crawl z1 --nolog
 
 
 
+pip install scrapyd
+
+
+curl http://localhost:6800/schedule.json -d project=z018 -d spider=z1 -d setting=DOWNLOAD_DELAY=2 -d a=2
+
+
+scrapyd-deploy scrapyd_z018 -p z018
+
 
 

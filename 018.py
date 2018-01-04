@@ -234,7 +234,7 @@ try:
   print arr['data']['phone'];
   '''
 
-  '''读取文本数据'''
+  '''读写文本数据'''
   #http://www.runoob.com/python/python-files-io.html
   try:
     fname = '018.txt';
