@@ -47,7 +47,6 @@ class Z1Spider(scrapy.Spider):
     allowed_domains = ['jx.com']
     start_urls = []
 
-    import MySQLdb
 
     #初始化变量
     fobj = open('config.json', 'w+');
@@ -73,6 +72,7 @@ class Z1Spider(scrapy.Spider):
     config['ddid']  = ddid;
     config['limit'] = limit;
 
+    '''
     try:
         encode_json = json.dumps(config)
         fobj.write(encode_json);
@@ -81,6 +81,7 @@ class Z1Spider(scrapy.Spider):
         print 'config write error. please check permission';
 
     #连接数据库
+    import MySQLdb
     try:
         config_db = open('config_db.json');
         config_db = config_db.read();
@@ -93,7 +94,7 @@ class Z1Spider(scrapy.Spider):
         #import traceback;
         #traceback.print_exc();
         sys.exit(0);
-
+    '''
 
 
 
