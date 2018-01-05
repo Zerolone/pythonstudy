@@ -49,6 +49,20 @@ curl http://192.168.2.239:6800/cancel.json -d project=Crawler -d job= 8270364f9d
 
 scrapyd-deploy scrapyd_z018 -p z018
 
+easy_install
+mysql-python
+apt-get install libmariadbclient-dev
+
+pycurl
+apt-get install libssl-dev libcurl4-openssl-dev python-dev
 
 
 http://scrapyd.readthedocs.io/en/latest/config.html
+
+
+1、建立一个采集任务， 接受参数为ddid，功能为获取相应的地址， 然后获取评论内容，
+将评论数据采集，通过接口将数据入库，入库规则可以在接口中实现。
+
+2、通过scrapyd管理每个采集任务进行采集
+
+3、接口增加一个功能，获取当前采集任务数量，提交到scrapyd，增加采集任务。 可以根据时间来临时分配
