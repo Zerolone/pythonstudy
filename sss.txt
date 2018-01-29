@@ -10,3 +10,11 @@ pip install f:\MySQL_python-1.2.5-cp27-none-win_amd64.whl
 
 
 
+easy_install
+mysql-python
+apt-get install libmariadbclient-dev
+
+pycurl
+apt-get install libssl-dev libcurl4-openssl-dev python-dev
+
+

@@ -1,20 +1,254 @@
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
-ddid=2 is update succ
+{
+    "errcode": 0,
+    "msg": "成功",
+    "data": {
+        "count": 5,
+        "offset": 0,
+        "length": 10,
+        "lists": [
+            {
+                "ddid": "132479",
+                "htitle": "浙江大学医学院附属第一医院",
+                "dtitle": "小儿内科",
+                "ddname": "梁黎",
+                "titless": "主任医师,教授",
+                "titlesorder": "3",
+                "ddpic": "http://www.mingyihui.net/images/doctor_default155x155.jpg",
+                "skilled": "       矮小症、性早熟、肥胖并发症和甲状腺等疾病的诊治        ",
+                "goodrate": 71,
+                "feedcount": "48",
+                "ddmid": "0",
+                "schedule": {
+                    "getSche": false,
+                    "schedules": {
+                        "Y": [
+                            {
+                                "service": "zj12580",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/zj12580.png",
+                                "service_title": "浙江12580",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=12508&docName=%e6%a2%81%e9%bb%8e",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=12508&docName=%e6%a2%81%e9%bb%8e"
+                            },
+                            {
+                                "service": "w189jk",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/w189jk.png",
+                                "service_title": "翼健康",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639300",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639300"
+                            }
+                        ]
+                    },
+                    "acceptAll": false,
+                    "acceptY": false,
+                    "getScheY": false,
+                    "getScheN": false,
+                    "serviceCnt": 2
+                }
+            },
+            {
+                "ddid": "132483",
+                "htitle": "浙江大学医学院附属第一医院",
+                "dtitle": "小儿内科",
+                "ddname": "覃珍",
+                "titless": "副主任医师",
+                "titlesorder": "6",
+                "ddpic": "http://www.mingyihui.net/images/doctor_default155x155.jpg",
+                "skilled": "       主治儿科常见病、多发病及疑难病症，能熟练诊断处理新生儿急重疾病，尤擅长小儿消化系统和内分泌系统疾病的诊治        ",
+                "goodrate": 92,
+                "feedcount": "60",
+                "ddmid": "0",
+                "schedule": {
+                    "getSche": false,
+                    "schedules": {
+                        "Y": [
+                            {
+                                "service": "w189jk",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/w189jk.png",
+                                "service_title": "翼健康",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639303",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639303"
+                            },
+                            {
+                                "service": "zj12580",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/zj12580.png",
+                                "service_title": "浙江12580",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=19748&docName=%e8%a6%83%e7%8f%8d",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=19748&docName=%e8%a6%83%e7%8f%8d"
+                            }
+                        ]
+                    },
+                    "acceptAll": false,
+                    "acceptY": false,
+                    "getScheY": false,
+                    "getScheN": false,
+                    "serviceCnt": 2
+                }
+            },
+            {
+                "ddid": "132480",
+                "htitle": "浙江大学医学院附属第一医院",
+                "dtitle": "小儿内科",
+                "ddname": "王春林",
+                "titless": "副主任医师",
+                "titlesorder": "6",
+                "ddpic": "http://www.mingyihui.net/images/doctor_default155x155.jpg",
+                "skilled": "儿内科、内分泌遗传代谢性疾病的诊治",
+                "goodrate": 76,
+                "feedcount": "21",
+                "ddmid": "0",
+                "schedule": {
+                    "getSche": false,
+                    "schedules": {
+                        "Y": [
+                            {
+                                "service": "zj12580",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/zj12580.png",
+                                "service_title": "浙江12580",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=12509&docName=%e7%8e%8b%e6%98%a5%e6%9e%97",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=12509&docName=%e7%8e%8b%e6%98%a5%e6%9e%97"
+                            },
+                            {
+                                "service": "w189jk",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/w189jk.png",
+                                "service_title": "翼健康",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639301",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639301"
+                            }
+                        ]
+                    },
+                    "acceptAll": false,
+                    "acceptY": false,
+                    "getScheY": false,
+                    "getScheN": false,
+                    "serviceCnt": 2
+                }
+            },
+            {
+                "ddid": "132484",
+                "htitle": "浙江大学医学院附属第一医院",
+                "dtitle": "小儿内科",
+                "ddname": "郑卯昵",
+                "titless": "副主任医师",
+                "titlesorder": "6",
+                "ddpic": "http://www.mingyihui.net/images/doctor_default155x155.jpg",
+                "skilled": "       儿科呼吸系统疾病诊治        ",
+                "goodrate": 100,
+                "feedcount": "4",
+                "ddmid": "0",
+                "schedule": {
+                    "getSche": false,
+                    "schedules": {
+                        "Y": [
+                            {
+                                "service": "zj12580",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/zj12580.png",
+                                "service_title": "浙江12580",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=14704&docName=%e9%83%91%e5%8d%af%e6%98%b5",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.zj12580.cn/doc/info;jsessionid=98E7DF6C8CFB7640D9219E373C9897E8.b?hosId=957103&deptId=6155&docId=14704&docName=%e9%83%91%e5%8d%af%e6%98%b5"
+                            },
+                            {
+                                "service": "w189jk",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/w189jk.png",
+                                "service_title": "翼健康",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639302",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639302"
+                            }
+                        ]
+                    },
+                    "acceptAll": false,
+                    "acceptY": false,
+                    "getScheY": false,
+                    "getScheN": false,
+                    "serviceCnt": 2
+                }
+            },
+            {
+                "ddid": "1003628",
+                "htitle": "浙江大学医学院附属第一医院",
+                "dtitle": "小儿内科",
+                "ddname": "余绍淼",
+                "titless": "",
+                "titlesorder": "99",
+                "ddpic": "http://www.mingyihui.net/images/doctor_default155x155.jpg",
+                "skilled": "",
+                "goodrate": 0,
+                "feedcount": null,
+                "ddmid": "0",
+                "schedule": {
+                    "getSche": false,
+                    "schedules": {
+                        "Y": [
+                            {
+                                "service": "w189jk",
+                                "service_img": "http://m.mingyihui.net/services/templates/skins/red2017/images/service/3x/w189jk.png",
+                                "service_title": "翼健康",
+                                "service_partner": "1",
+                                "service_crawlmode": "0",
+                                "redirect": "0",
+                                "redirectUrl": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639304",
+                                "accept": false,
+                                "status": "3",
+                                "msg": "",
+                                "url": "http://www.189jk.cn/public/doctor?hospitalId=1944&departmentId=222018&doctorId=639304"
+                            }
+                        ]
+                    },
+                    "acceptAll": false,
+                    "acceptY": false,
+                    "getScheY": false,
+                    "getScheN": false,
+                    "serviceCnt": 1
+                }
+            }
+        ],
+        "tips": "名医汇是一个医生服务聚合平台，本科室医生的号源由浙江12580、翼健康提供。"
+    }
+}

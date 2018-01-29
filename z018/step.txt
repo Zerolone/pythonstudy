@@ -49,12 +49,6 @@ curl http://192.168.2.239:6800/cancel.json -d project=Crawler -d job= 8270364f9d
 
 scrapyd-deploy scrapyd_z018 -p z018
 
-easy_install
-mysql-python
-apt-get install libmariadbclient-dev
-
-pycurl
-apt-get install libssl-dev libcurl4-openssl-dev python-dev
 
 
 http://scrapyd.readthedocs.io/en/latest/config.html
@@ -65,4 +59,29 @@ http://scrapyd.readthedocs.io/en/latest/config.html
 
 2、通过scrapyd管理每个采集任务进行采集
 
-3、接口增加一个功能，获取当前采集任务数量，提交到scrapyd，增加采集任务。 可以根据时间来临时分配
+3、接口增加一个功能，获取当前采集任务数量，提交到scrapyd，增加采集任务。
+可以根据时间来临时分配增加频率
+
+4、单个页面采集频率可以通过单独的采集程序控制
+
+5、任务个数，可以通过scrapyd控制
+
+6、任务可以分配到多个服务器上， 比如ddid = 1-10000 的一个服务器进行采集，
+临时需要采集某个医生， 可以单独一台服务器进行此操作
+
+7、如果是用crawl的话， 可以直接复制doctor_feedback
+考虑将采集的数据，增加几个字段， service， content。
+content用json的方式保存某些不在之前字段里面的内容，针对haodf， 这个字段是空,
+这样方便以后的未知字段的扩展
+
+
+=================================
+1、调度程序， 因为scrapyd不支持按时间调度， 这样的话， 单独写一个linux开机任务，
+进行调度功能， 目前想到的是，按时间推任务到scrapyd中，比如， 白天， 4个任务， 晚上8个
+通过scrapyd的接口， 获取当前运行的任务个数， 少几条， 就加几条任务进去。
+
+2、
+
+
+
+
